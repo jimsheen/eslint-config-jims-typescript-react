@@ -39,7 +39,7 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: '14.x'
-          registry-url: 'https://yarn.pkg.github.com'
+          registry-url: 'https://npm.pkg.github.com'
           scope: '@jimsheen'
       - name: Publish to GitHub Packages
         run: yarn publish
