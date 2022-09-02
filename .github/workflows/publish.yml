@@ -26,15 +26,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Setup .npmrc file to publish to yarn
-        uses: actions/setup-node@v1
-        with:
-          node-version: '14.x'
-          registry-url: 'https://registry.npmjs.org'
-      - name: Publish to yarn
-        run: yarn publish --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       - name: Setup .npmrc file to publish to GitHub Packages
         uses: actions/setup-node@v1
         with:
