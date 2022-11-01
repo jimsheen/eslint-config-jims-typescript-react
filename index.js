@@ -22,6 +22,7 @@ module.exports = {
     },
   },
   rules: {
+		'single-quote': 'on',
     eqeqeq: ['error', 'always', { null: 'ignore' }],
     'template-curly-spacing': 'error',
     'rest-spread-spacing': ['error', 'never'],
